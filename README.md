@@ -21,12 +21,23 @@ The Courier Service Dashboard is a web application designed for managing and tra
 - **Others**: Font Awesome for icons
 
 ## Setup and Installation
-Ensure you have Python and SQL Server installed on your system before setting up the project.
+
+Before setting up the project, ensure that Python and SQL Server are installed on your system. The application utilizes Windows Authentication to connect to the SQL Server, thus it should be configured to allow trusted connections. For development purposes, the connection settings are specified in the db.py file. Modify the connection string to match your SQL Server configuration. Consider using environment variables or a secure configuration management tool for handling sensitive information in production environments.
+
+## Database Connection Management
+
+The application establishes a new database connection for each transaction. In a production environment, consider implementing connection pooling to optimize performance and resource utilization. Always ensure that connections are properly closed after transactions to prevent resource leaks.
+
+## Scalability and Security
+
+Scalability: To enhance scalability, consider using a load balancer and deploying the application in a distributed environment.
+Security: Implement input validation to prevent SQL injection and other common security vulnerabilities. Regularly update the application and its dependencies to mitigate security risks.
 
 # License
-This project is protected by copyright and is not available under any public license. All rights are reserved. No part of this project may be reproduced, distributed, or transmitted in any form or by any means, without prior written permission from the author.
 
-© 2024 Vadana Ioan-Grigore. All rights reserved.
+- This project is protected by copyright and is not available under any public license. All rights are reserved. No part of this project may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without prior written permission from the author.
+
+- © 2024 Vadana Ioan-Grigore. All rights reserved.
 
 # Contact
 For support or to report issues, please email grigorevadana3@gmail.com
