@@ -23,9 +23,6 @@ The Courier Service Dashboard is a web application designed for managing and tra
 ## Setup and Installation
 Ensure you have Python and SQL Server installed on your system before setting up the project.
 
-## Disclaimer
-The performance of the model depends on the quality and size of the dataset. This script is intended for educational purposes and may require adjustments for production use.
-
 # License
 This project is protected by copyright and is not available under any public license. All rights are reserved. No part of this project may be reproduced, distributed, or transmitted in any form or by any means, without prior written permission from the author.
 
